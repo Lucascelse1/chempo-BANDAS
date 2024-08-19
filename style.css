@@ -55,14 +55,15 @@
     width: 100%;
     height: 7rem;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: flex-end;
 }
 
 .navbar {
     padding: 0;
     margin: 0;
-    width: 55%;
+    margin-right: 3rem;
+    width: 30%;
     height: 40%;
     display: flex;
     align-items: end;
@@ -234,6 +235,10 @@
 
 .carburo-img {
     width: 85%;
+}
+
+.NW-img {
+    width: 90%;
 }
 
 .mats-imgs {
@@ -678,13 +683,14 @@ input {
         align-items: center;
     }
 
-    .nav-phone>button {
+    .nav-phone>a {
         margin-right: .5rem;
         border: 0;
         background-color: #435698;
         color: white;
         padding: .2rem;
         border-radius: 3px;
+        text-decoration: none;
     }
 
 
