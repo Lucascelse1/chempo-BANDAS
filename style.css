@@ -22,11 +22,16 @@
     border-radius: 18px 0 0 18px;
 }
 
+
+.phone-icon {
+    margin-left: 1rem;
+}
+
 .top-info {
     display: flex;
-    width: 30rem;
+    width: 50rem;
     justify-content: end;
-    margin-right: 1rem;
+    margin-right: 1.2rem;
 }
 
 .top-info>div {
@@ -169,19 +174,10 @@
 
 .texto-phone {
     text-align: center;
-    width: 45%;
+    width: 54%;
     font-size: 20px;
 }
 
-.titulo-convertidores {
-    margin-bottom: 4rem;
-    margin-left: 2rem;
-
-}
-
-.titulo-convertidores h1 {
-    font-size: 45px;
-}
 
 .maquinas-img-container {
     display: flex;
@@ -205,44 +201,65 @@
     width: 100%;
 }
 
+.titulo-convertidores {
+    width: 100%;
+}
+
+.titulo-convertidores>img {
+    width: 100%;
+   
+    margin-bottom: 6rem;
+}
+
+.mats-container {
+    display: flex;
+}
+
+.mats-container>section {
+    width: 50%;
+}
+
 .materiales-img-sec {
     width: 100%;
     max-width: 100%;
 }
 
-
 .mats-section {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: center;
+    justify-content: space-around;
     margin-top: 6rem;
 }
 
 .mats-texto {
-    width: 30%;
+    width: 50%;
 }
 
 .mats-divs {
-    width: 20%;
+    width: 25%;
     display: flex;
     align-items: center;
     justify-content: end;
 }
 
 .compacto-img {
-    width: 75%;
+    width: 120%;
 }
 
 .carburo-img {
-    width: 85%;
+    width: 130%;
+}
+
+.mat-NW {
+    margin-top: 4.5rem;
 }
 
 .NW-img {
-    width: 90%;
+    width: 140%;
 }
 
 .mats-imgs {
-    width: 65%;
+    width: 100%;
 }
 
 
@@ -329,7 +346,8 @@ footer {
     border-top: 4px solid gray;
     width: 93%;
     margin: 0 auto;
-
+    margin-top: 5rem;
+    margin-bottom: 1rem;
 }
 
 
@@ -451,8 +469,8 @@ input {
 
 .tarjeta-cajeta {
     width: 40%;
-    
-    
+
+
 }
 
 .contact-options {
@@ -467,37 +485,7 @@ input {
 /*-------------------------RESPONSIVE DESING------------------------*/
 
 
-
-
-
-@media only screen and (max-width: 1441px) {
-
-
-    .nav-conteiner {
-        width: 100%;
-    }
-
-    .navbar {
-        align-items: flex-start;
-        width: 85%;
-    }
-
-    .footer-contacts {
-        margin: 0;
-        width: 55%;
-    }
-
-    .link_footer {
-        width: 110%;
-    }
-
-    .footer-logo {
-        width: 70%;
-    }
-}
-
-
-@media screen and (max-width : 1025px) and (max-width : 1440px) {
+@media screen and (max-width : 1025px) {
 
     header {
         height: 6rem;
@@ -539,6 +527,11 @@ input {
         margin: 0;
     }
 
+    .mats-divs {
+        width: 50%;
+    }
+
+    
 
     .footer-logo {
         width: 70%;
@@ -559,12 +552,43 @@ input {
     .tarjet {
         width: 75%;
     }
-    
+
     .footer-info-div {
         width: 100%;
     }
 
 }
+
+
+@media only screen and (max-width: 1441px) {
+
+
+    .nav-conteiner {
+        width: 100%;
+    }
+
+    .navbar {
+        align-items: flex-start;
+        width: 85%;
+    }
+
+    .footer-contacts {
+        margin: 0;
+        width: 55%;
+    }
+
+    .link_footer {
+        width: 110%;
+    }
+
+    .footer-logo {
+        width: 70%;
+    }
+
+    
+
+
+
 
 @media screen and (max-width : 720px) {
 
@@ -738,24 +762,35 @@ input {
     }
 
     .titulo-convertidores {
-        margin-top: 1rem;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding-top: 1.2rem;
     }
 
-
-    .titulo-convertidores h1 {
-        font-size: 30px;
-        margin-left: 0.5rem;
-
+    .titulo-convertidores>img {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 1rem;
     }
-
 
     .maquinas-img {
+        width: 100%;
+    }
+
+    .mats-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mats-container>section {
         width: 100%;
     }
 
     .mats-section {
         flex-direction: column;
         margin: 0;
+        width: 100%;
     }
 
     .mats-texto {
@@ -781,6 +816,22 @@ input {
         width: 50%;
     }
 
+    .compacto-img {
+        width: 50%;
+    }
+
+    .carburo-img {
+        width: 63%;
+    }
+
+    .NW-img {
+        width: 60%;
+    }
+
+    .titulo-contacto {
+        margin: 0;
+        font-size: 26.2px;
+    }
 
     /* Main container */
     .main-container {
