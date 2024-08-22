@@ -15,7 +15,6 @@
 
 .top>.letras-arriba {
     display: flex;
-    width: 40rem;
     color: #f5f5f5;
     justify-content: end;
     background-color: #283890;
@@ -24,12 +23,11 @@
 
 
 .phone-icon {
-    margin-left: 1rem;
+    margin-left: 1.5rem;
 }
 
 .top-info {
     display: flex;
-    width: 50rem;
     justify-content: end;
     margin-right: 1.2rem;
 }
@@ -201,13 +199,17 @@
     width: 100%;
 }
 
-.titulo-convertidores {
+.titulo-convertidores-phone {
+    display: none;
+}
+
+.titulo-convertidores-desktop {
     width: 100%;
 }
 
-.titulo-convertidores>img {
+.titulo-convertidores-desktop>img {
     width: 100%;
-   
+
     margin-bottom: 6rem;
 }
 
@@ -347,9 +349,15 @@ footer {
     width: 93%;
     margin: 0 auto;
     margin-top: 5rem;
-    margin-bottom: 1rem;
+
 }
 
+.titulo-form {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 6rem;
+    margin-top: 1rem;
+}
 
 
 form {
@@ -531,7 +539,7 @@ input {
         width: 50%;
     }
 
-    
+
 
     .footer-logo {
         width: 70%;
@@ -585,7 +593,7 @@ input {
         width: 70%;
     }
 
-    
+}
 
 
 
@@ -761,17 +769,18 @@ input {
         gap: 20px;
     }
 
-    .titulo-convertidores {
-        width: 100%;
-        max-width: 100%;
-        margin: 0;
-        padding-top: 1.2rem;
+    .titulo-convertidores-desktop {
+        display: none;
     }
 
-    .titulo-convertidores>img {
+    .titulo-convertidores-phone {
+        display: block;
+        margin-top: 2rem;
         width: 100%;
-        max-width: 100%;
-        margin-bottom: 1rem;
+    }
+
+    .titulo-convertidores-phone>img {
+        width: 100%;
     }
 
     .maquinas-img {
@@ -827,6 +836,8 @@ input {
     .NW-img {
         width: 60%;
     }
+
+
 
     .titulo-contacto {
         margin: 0;
